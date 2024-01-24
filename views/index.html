@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert File</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-800 min-h-screen flex items-center justify-center">
+    <div class="max-w-md p-8 bg-white dark:bg-gray-900 shadow-md rounded-md">
+        <h1 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">File Converter</h1>
+        <form onsubmit="return converter(event)" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload
+                    File</label>
+                <input
+                    class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    id="file_input" type="file">
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Convert</button>
+        </form>
+    </div>
+</body>
+
+<script src="../src/convert.js"></script>
+
+
+</html>
